@@ -94,3 +94,9 @@
   right: 1rem;
   cursor: pointer;
 }
+@media(max-width:400px){
+  .cart {
+    width: 300px;
+  }
+  
+}

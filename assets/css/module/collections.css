@@ -56,6 +56,9 @@
 .frete {
   order: 4;
 }
+.carousel_item i{
+  font-size: 2.4rem;
+}
 .price {
   order: 1;
   grid-column: span 1;
@@ -154,14 +157,12 @@
     width: 105px;
   }
   .product-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding-left: 0.8rem;
   }
   .price {
-    font-size: 1.5rem;
-  }
-  .frete {
-    grid-column: span 2;
-    text-align: left;
+    font-size: 1rem;
+    padding-left: 0.8rem;
   }
   .img {
     width: 105px;
@@ -169,10 +170,10 @@
     object-fit: contain;
   }
   .next {
-    right: 4.5rem;
+    right: 2rem;
   }
   .previous {
-    left: 2.8rem;
+    left: 2.6rem;
   }
   .next,
   .previous{
@@ -183,4 +184,10 @@
   .previous i{
     font-size: 10px;
   }
+  .carousel_item i{
+    font-size: 1.8rem;
+  }
+  .add-cart {
+    margin-right: 0rem;
+}
 }

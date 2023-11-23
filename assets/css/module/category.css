@@ -6,22 +6,12 @@
   gap: 2rem;
   padding-bottom: 4rem;
 }
+.category_main{
+}
  .category_title{
   width: 91vw;
   margin: auto;
-  background-color: red;
 }
-.category_title h1{
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  margin: 5rem 0 ;
-  font-weight: 200;
-  font-style: italic;
-  font-size: 4rem;
-  background-color: #AD825C;
-  color: white;
-}
-
 .custom_container {
   position: absolute;
   width: 100%;
@@ -77,8 +67,6 @@
   padding: 0.5rem;
   background-color: transparent;
   border-bottom: 1px solid rgba(218, 218, 218, 0.532);
-  
-
 }
 .category_choice button h1{
   font-family: 'Poppins', sans-serif;
@@ -116,6 +104,7 @@
 .order button h1{
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  padding: 0.5rem;
 }
 .order button:hover .order_i {
   transform: rotate(180deg);
@@ -145,5 +134,16 @@
   .category_img {
     width: 70px;
     height: 70px;
+  }
+  .category{
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+  }
+  .order button {
+    margin-top: 0rem;}
+  .brand{
+    display: none;
+  }
+  .order{
+    padding: 1.5rem 0 0 0;
   }
 }

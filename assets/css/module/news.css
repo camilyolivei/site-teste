@@ -54,10 +54,19 @@
   }
   @media(max-width:400px){
     .images{
-      height: 250px;
+      height: 210px;
     }
     .title-style{
       font-size: 2.5rem;
       padding: 2rem  0 1rem 0;
+    }
+    .img_news{
+      height: 220px;
+    }
+    .news video{
+      height: 220px;
+    }
+    .images{
+      height: 220px;
     }
   }
