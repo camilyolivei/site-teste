@@ -1,6 +1,7 @@
 footer {
   width: 100vw;
   overflow-x: hidden;
+  margin-top: 4rem;
   padding-top: 2rem;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.614);
   font-family: 'Poppins', sans-serif;
