@@ -1,0 +1,50 @@
+.rules_container{
+    width: 91vw;
+    margin: auto;
+    font-family: 'Poppins';
+}
+.rules{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
+    padding: 3rem 0;
+    align-items: center;
+    gap: 1.5rem;
+}
+.rules_item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem   ;
+}
+.rules_item span{
+    font-weight: 500;
+    font-size: 15px;
+}
+.rules_item p{
+    font-weight: 300;
+    color: #939393;
+    font-size: 13px;
+}
+@media (max-width:850px){
+    .rules_item span{
+        font-size: 13px;
+    }
+    .rules_item p{
+        font-size: 11px;
+    }
+}
+@media(max-width:770px){
+    .rules_item span{
+        font-size: 15px;
+    }
+    .rules_item p{
+        font-size: 13px;
+    }
+    .rules{
+        overflow-x: scroll;
+        grid-template-columns: 350px 300px 300px 300px;
+        padding: 1rem;
+    }
+    .rules::-webkit-scrollbar-thumb{
+        background-color: white;
+    }
+}

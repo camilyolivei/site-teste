@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>document.documentElement.className += ' js';</script>
+</head>
+
+<body>
+    <!--Modal-->
+    <div class="overlay" data-overlay></div>
+    <div class="modal" data-modal>
+        <div class="modal-close-overlay" data-modal-overlay></div>
+        <div class="modal-content">
+            <div class="newsletter">
+                <div class="newsletter_txt">
+                    <button class="modal-close-btn" data-modal-close>
+                        <i class="fa-solid fa-x" name="close-outline"></i>
+                    </button>
+                    <h3 class="newsletter-title">Seja bem-vinda!</h3>
+                    <p class="newsletter-desc">
+                        Cadastre-se e receba nossas novidades
+                    </p>
+                    <form action="\">
+                        <input type="nome" name="nome" class="nome-field" placeholder="Digite seu nome" required>
+                        <input type="email" name="email" class="email-field" placeholder="Digite seu email" required>
+                        <button type="submit" class="btn-newsletter">Cadastre-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===================================================================================-->
+    <!--Button whatsapp-->
+    <button class="button_base button-whatsapp ">
+        <a href="#"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+    </button><!--
+    <===================================================================================-->
+    <!--Header-->
+    <header id="top">
+        <div class="emphasis">
+            <p>Frete gratis na coleção de verão</p>
+        </div>
+        <nav>
+            <ul class="menu_primary">
+                <li class="logo"><a href="#">Logo</a></li>
+                <li class="search">
+                    <input type="text" name="search" id="search" placeholder="O que você procura?">
+                    <label for="search" class="icon_search">
+                        <a href="#"><img src="/assets/images/icon/search.png" alt="Pesquisar"></a>
+                    </label>
+                </li>
+                <li class="container_icon">
+                    <ul class="btn_wrapper">
+                        <li class="login">
+                            <button class="login_btn">Entrar <i class="fa-solid fa-chevron-down"></i></button>
+                        </li>
+                        <li class="favorite"><a href="#"><img src="assets/images/icon/heart.png" alt="Coração"></a></li>
+                        <li class="bag" id="cart-icon"><a href="#"> <i class='bx bx-cart' style="font-size: 2.5rem;"></i></a></li>
+                        <li class="menu-open" data-menu="button_open"><i class="fa-solid fa-bars"></i></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu_list" data-menu="list">
+                <li class="offer">
+                    <a href="#">Ofertas <i class='bx bx-chevron-down'></i></a>
+                    <ul class="menu_hover">
+                        <li><a href="#">Vestido</a></li>
+                        <li><a href="#">Maquiagem</a></li>
+                        <li><a href="#">Calça jeans</a></li>
+                        <li><a href="#">Salto</a></li>
+                    </ul>
+                </li>
+                <li class="new">
+                    <a href="#">Novidades <i class='bx bx-chevron-down'></i></a>
+                    <ul class="menu_hover">
+                        <li><a href="#"> óculos de sol</a></li>
+                        <li><a href="#">Boné</a></li>
+                    </ul>
+                </li>
+                <li class="feminine">
+                    <a href="#">Feminino <i class='bx bx-chevron-down'></i></a>
+                    <ul class="menu_hover">
+                        <li><a href="#"> Saia</a></li>
+                        <li><a href="#">Vestido</a></li>
+                        <li><a href="#">Maquiagem</a></li>
+                    </ul>
+                </li>
+                <li class="plusSize">
+                    <a href="#">Plus size <i class='bx bx-chevron-down'></i></a>
+                    <ul class="menu_hover">
+                        <li><a href="#">Saia</a></li>
+                        <li><a href="#">Vestido</a></li>
+                        <li><a href="#">Maquiagem</a></li>
+                    </ul>
+                </li>
+                <li class="beauty">
+                    <a href="#">Beleza <i class='bx bx-chevron-down'></i></a>
+                    <ul class="menu_hover">
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Escova</a></li>
+                        <li><a href="#">Maquiagem</a></li>
+                    </ul>
+                </li>
+                <li class="header_brands">
+                    <a href="#">Marcas <i class='bx bx-chevron-down'></i></a>
+                    <ul class="menu_hover">
+                        <li><a href="#">Vans</a></li>
+                    </ul>
+                </li>
+
+                <li class="shoes">
+                    <a href="#">Calçados <i class='bx bx-chevron-down'></i></a>
+                    <ul class="menu_hover">
+                        <li><a href="#">Botas</a></li>
+                        <li><a href="#">Tênis</a></li>
+                        <li><a href="#">Tênis</a></li>
+                        <li><a href="#"> Sandália</a></li>
+
+                    </ul>
+                </li>
+                <li class="pajamas">
+                    <a href="#">Pijamas <i class='bx bx-chevron-down'></i></a>
+                    <ul class="menu_hover">
+                        <li><a href="#"> Flor</a></li>
+                        <li><a href="#">Liso</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!--Login-->
+            <div class="overlay" data-overlay></div>
+            <div class="main_login" data-login>
+                <div class="login-close-overlay" data-login-overlay></div>
+                <div class="login-content">
+                    <div class="login_title">
+                        <button class="login-close-btn" data-login-close>
+                            <i class="fa-solid fa-x" name="close-outline"></i>
+                        </button>
+                        <h1>Login</h1>
+                        
+                    </div>
+                    <form action="\">
+                        <div class="email">
+                            <input type="email" name="email" class="email-field" required placeholder="Email">
+                        </div>
+
+                        <div class="password">
+                            <input type="password" name="password" class="password-field" id="password" required placeholder="Senha">
+                            <i class="bi bi-eye-slash" id="btn-password" onclick="showPassword()"></i>
+                        </div>
+                        <button type="submit" class="btnLogin">Entrar</button>
+                        <div class="login_box">
+                            <ul class="login_link">
+                                <li>
+                                    <a href="#" class="box_pass">fazer login com SMS</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="box_pass">esqueci minha senha</a>
+                                </li>
+                            </ul>
+                            <p>ou</p>
+
+                            <h1>Acesso rápido com</h1>
+                            <ul class="login_container">
+                                <li><a href="#"><img src="assets/images/icon/google-icon.png" alt="Icone Google" style="width: 30px;height: 30px;"></a></li>
+                                <li><a href="#"><img src="assets/images/icon/sin-5582.svg" alt="Icone Google" style="width: 30px;height: 25px;"></a></li>
+                                <li><a href="#"><img src="assets/images/icon/facebook-2870.svg" alt="Icone facebook" style="width: 30px;height: 30px;"></a></li>
+                                <li><a href="#"><img src="assets/images/icon/twitter-x-logo-black-round-20851.svg" alt="Icone facebook" style="width: 30px;height: 30px;"></a></li>
+                            </ul>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Carrinho</h2>
+                <!--Content-->
+                <section class="cart-content">
+                </section>
+                <!--Total-->
+                <div class="total">
+                    <h2 class="total-title">Total</h2>
+                    <div class="total-price">R$0</div>
+                </div>
+                <!--Button-->
+                <button type="button" class="btn-buy">Comprar</button>
+                <!--Cart close-->
+                <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
+        </nav>
+    </header>
+    <!--===================================================================================-->
+    <main>
+        <!--Slide-->
+        <section id="slide">
+            <div class="wrapper">
+                <div class="slide-wrapper" data-slide="wrapper">
+                    <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+                    <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+                    <div class="slide-list" data-slide="list">
+                        <div class="slide-item" data-slide="item" data-index="0">
+                            <div class="slide-content">
+                                <img class="slide-image" src="/assets/images/imgSlide/banner-1.png" alt="Imagem slide 1" />
+                            </div>
+                        </div>
+
+                        <div class="slide-item" data-slide="item" data-index="1">
+                            <div class="slide-content">
+                                <img class="slide-image" src="/assets/images/imgSlide/banner-2.png" alt="Imagem slide 2" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slide-controls" data-slide="controls-wrapper">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Rules-->
+        <section class="rules_container">
+            <ul class="rules">
+                <li class="rules_item">
+                    <img src="assets/images/imgRules/frete.webp" alt="">
+                    <span>Frete Grátis </span>
+                    <p>em compras acima de R$100
+                    </p>
+                </li>
+                <li class="rules_item">
+                    <img src="assets/images/imgRules/cartao.webp" alt="">
+                    <span>Parcelamos </span>
+                    <p>em até 10x no cartão
+                    </p>
+                </li>
+                <li class="rules_item">
+                    <img src="assets/images/imgRules/4.webp" alt="">
+                    <span>
+                        Envio Rápido</span>
+                    <p> em até 24 horas
+                    </p>
+                </li>
+                <li class="rules_item">
+                    <img src="assets/images/imgRules/shield-check.svg" alt="">
+                    <span>
+                        Proteção</span>
+                    <p> site protegido
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <!--===================================================================================-->
+        <!--News-->
+        <section class="news">
+            <h1 class="title-style">Nova coleção <strong>Verão</strong> </h1>
+            <section class="images">
+                <div class="img_news"></div>
+                <div>
+                    <video src="assets/images/imgCollections/production_id_5120828 (540p).mp4" autoplay muted loop ></video>
+                </div>
+                <div class="img_two img_news"></div>
+            </section>
+        </section>
+        <!--===================================================================================-->
+        <!--Category-->
+        <section style="padding-bottom: 3rem">
+            <section class="order">
+                <button>
+                    <h1>Categoria Feminina</h1>
+                    <i class="fa-solid fa-chevron-down order_i"></i>
+                </button>
+            </section>
+
+            <div class="category">
+                <section class="category_choice" style="position: relative;">
+                    <button>
+                        <h1>Produtos</h1>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="custom_container">
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="feminino" id="feminino">
+                            <label for="feminino">Salto</label>
+
+                        </fieldset>
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="rosa" id="rosa">
+                            <label for="rosa">Bolsa</label>
+                        </fieldset>
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="laranja" id="laranja">
+                            <label for="laranja">Maquiagem</label>
+                        </fieldset>
+                    </div>
+
+                </section>
+                <section class="category_choice" style="position: relative;">
+                    <button>
+                        <h1>Cor</h1>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="custom_container">
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="amarelo" id="amarelo">
+                            <label for="amarelo">Amarelo</label>
+
+                        </fieldset>
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="tenis" id="tenis">
+                            <label for="tenis">Roxo</label>
+                        </fieldset>
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="bolsas" id="bolsas">
+                            <label for="bolsas">Rosa</label>
+                        </fieldset>
+                    </div>
+
+                </section>
+                <section class="category_choice" style="position: relative;">
+                    <button>
+                        <h1>Tamanho</h1>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="custom_container">
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="pp" id="pp">
+                            <label for="pp">PP</label>
+
+                        </fieldset>
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="m" id="m">
+                            <label for="m">M</label>
+                        </fieldset>
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="g" id="g">
+                            <label for="g">G</label>
+                        </fieldset>
+                    </div>
+
+                </section>
+
+                <section class="category_choice" style="position: relative;">
+                    <button>
+                        <h1>Marcas</h1>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="custom_container">
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="adidas" id="adidas">
+                            <label for="adidas">Adidas</label>
+
+                        </fieldset>
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="lacoste" id="lacoste">
+                            <label for="lacoste">Lacoste</label>
+                        </fieldset>
+                        <fieldset class="custom-checkbox">
+                            <input type="checkbox" name="gap" id="gap">
+                            <label for="gap">Gap</label>
+                        </fieldset>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="border"></div>
+
+        </section>
+        <!--===================================================================================-->
+
+        <!--Collections-->
+        <section class="collections" data-carousel="collections">
+            <div class="collection" data-carousel="collection">
+                <section class="collections_carousel">
+                    <button class="previous" data-carousel="btn-previous">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="next" data-carousel="btn-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <ul class="carousel_list" data-carousel="list">
+                        <!--box item-->
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+
+                                <img src="assets/images/imgCollections/saia bege.webp" alt="Saia bege" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 50</span>
+                                <h2 class="product-title">Saia bege tecido malha</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/blusaa.webp" alt="Imagem de uma saia" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 125</span>
+                                <h2 class="product-title">Blusa preta tecido canelado</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/vestido-bege.webp" alt="" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 30</span>
+                                <h2 class="product-title">Vestido bege tecido malha</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/saia-branca-1.webp" alt="Camisa social" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 175</span>
+                                <h2 class="product-title">Saia jeans branca com cinto</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/bermuda.webp" alt="Saia azul" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 200</span>
+                                <h2 class="product-title">Bermuda bege tecido canelado</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/vestido-branco2.webp" alt="Vestido branco" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 15</span>
+                                <h2 class="product-title">Vestido branco tecido malha</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/blusa-preta.webp" alt="Blusa manga comprida" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 20</span>
+                                <h2 class="product-title">Blusa manga comprida</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/listrado-white.webp" alt="Camisa social" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 75</span>
+                                <h2 class="product-title">Camisa social branca</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/saia-c.webp" alt="Short saia de couro sintético" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 40</span>
+                                <h2 class="product-title">Short saia de couro sintético</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/saia-bege.webp" alt="Saia bege com cinto marrom" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 60 </span>
+                                <h2 class="product-title">Saia bege com cinto marrom </h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <!--Collections 2-->
+        <section class="collections" data-carousel="collections">
+            <div class="collection" data-carousel="collection">
+                <section class="collections_carousel">
+                    <button class="previous" data-carousel="btn-previous">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="next" data-carousel="btn-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <ul class="carousel_list" data-carousel="list">
+                        <!--box item-->
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+
+                                <img src="assets/images/imgCollections/bermuda-azul.webp" alt="Bermuda azul" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 50</span>
+                                <h2 class="product-title">Bermuda azul tecido canelado</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/bermuda-couro.webp" alt="Bermuda " class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 125</span>
+                                <h2 class="product-title">Bermuda preta tecido couro</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/listrado-white.webp" alt="vestido vinho" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 50</span>
+                                <h2 class="product-title">Blusa textura canelado</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/saia-branca.webp" alt="Saia branca" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 175</span>
+                                <h2 class="product-title">Saia branca tecido malha</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/saia-c.webp" alt="Saia short" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 200</span>
+                                <h2 class="product-title">Saia short marinho</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/listrado-white.webp" alt="blusa listrado" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 75</span>
+                                <h2 class="product-title">Blusa listrada social</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/saia-bege.webp" alt="Saia bege" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 60 </span>
+                                <h2 class="product-title">Saia bege tecido social </h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/vestido-branco2.webp" alt="Vestido branco" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 300</span>
+                                <h2 class="product-title">Vestido branco com uma manga</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/blusa-preta.webp" alt="Blusa preta croped" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 70</span>
+                                <h2 class="product-title">Blusa preta croped</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        
+                        <li class="carousel_item" data-carousel="item">
+                            <a href="#" class="carousel_link">
+                                <img src="assets/images/imgCollections/saia-c.webp" alt="short canelado" class="img carousel_cover product-img img-1">
+
+                                <span class="price">R$ 40</span>
+                                <h2 class="product-title">shor canelado</h2>
+                                
+                                <i class='bx bx-cart-add add-cart' style="font-size: 2.3rem;"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <!--===================================================================================-->
+        <!--Brands-->
+        <section class="section brands">
+            <div class="section__title">
+                <h1 class="title-style">As melhores <strong>Marcas</strong> </h1>
+            </div>
+            <div class="brands__container container">
+                <div class="brands__logo">
+                    <img src="/assets/images/imgBrands/brand1.png" alt="Adidas" />
+                </div>
+                <div class="brands__logo">
+                    <img src="/assets/images/imgBrands/brand2.png" alt="Louis Vuitton" />
+                </div>
+                <div class="brands__logo">
+                    <img src="/assets/images/imgBrands/brand3.png" alt="Vans" />
+                </div>
+                <div class="brands__logo">
+                    <img src="/assets/images/imgBrands/brand4.png" alt="Nike" />
+                </div>
+                <div class="brands__logo">
+                    <img src="/assets/images/imgBrands/brand5.png" alt="Reebok" />
+                </div>
+            </div>
+        </section>
+        <!--===================================================================================-->
+    </main>
+    <!--Footer-->
+    <footer>
+        <nav class="footer_container">
+            <ul>
+                <li class="footer_title">Ajuda</li>
+                <li><a href="#">Atendimento</a></li>
+                <li><a href="#">Trocas e devoluções</a></li>
+                <li><a href="#">Dúvidas frequentes</a></li>
+                <li><a href="#">Termos de uso</a></li>
+            </ul>
+            <ul>
+                <li class="footer_title">Atendimento</li>
+                <li><a href="#">Atendimento</a></li>
+                <li><a href="#">Trocas e devoluções</a></li>
+                <li><a href="#">Dúvidas frequentes</a></li>
+                <li><a href="#">Termos de uso</a></li>
+            </ul>
+            <ul>
+                <li class="footer_title">Informação</li>
+                <li><a href="#">Política e Privacidade</a></li>
+                <li><a href="#">Mapa do site</a></li>
+                <li><a href="#">Meio ambiente</a></li>
+            </ul>
+            <ul class="contact">
+                <li class="footer_title">Entrar em contato</li>
+                <li>
+                    <ul>
+                        <div class="footer_info">
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit" class="site-btn">Enviar</button>
+                            </form>
+                            <div class="footer__social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="footer_">
+            <div class="footer_paymentmethod">
+                <a href="#"><img src="assets/images/imgPaymentmethod/img-1.png" alt="Master card"></a>
+                <a href="#"><img src="assets/images/imgPaymentmethod/img-2.png" alt="Visa"></a>
+                <a href="#"><img src="assets/images/imgPaymentmethod/img-3.png" alt="PayPal"></a>
+                <a href="#"><img src="assets/images/imgPaymentmethod/img-4.png" alt="Master card"></a>
+            </div>
+            <p>Copyright © Nome site Todos Os Direitos Reservados Camily</p>
+
+        </section>
+    </footer>
+    <script type="module" src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/slide.js"></script>
+    <script>
+        initSlider({
+            autoPlay: true,
+            startAtIndex: 0,
+            timeInterval: 3000,
+        })
+    </script>
+</body>
+
+</html>

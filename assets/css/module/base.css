@@ -1,0 +1,51 @@
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #eeeeee;
+  font-size: 1.6rem;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Abel', sans-serif;
+}
+main {
+  padding-top: 10rem;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: white;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 4px;
+  background-color: rgb(187, 187, 187);
+}
+/*variables*/
+:root {
+  /* ============= COLORS ============= */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* ============= FONT FAMILY ============= */
+  --font-family-poppis: 'Poppins', sans-serif;
+  --font-family-poppis:'Abel', sans-serif;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-top: 7rem;
+  }
+}

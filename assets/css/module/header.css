@@ -1,0 +1,248 @@
+.emphasis {
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 3;
+  width: 100vw;
+  padding: 0.5rem;
+}
+.emphasis.active {
+  display: none;
+}
+header {
+  width: 100vw;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+}
+header.active {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.button_base {
+  position: fixed;
+  z-index: 2;
+  bottom: 3rem;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button-whatsapp {
+  right: 3rem;
+  background-color: #25d366;
+}
+header nav {
+  width: 100%;
+  margin: auto;
+}
+header nav ul {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  padding: 0.5rem 0rem;
+  justify-content: space-between;
+}
+
+.offer {
+  position: relative;
+}
+.menu_list li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;;
+}
+.menu_list li a i {
+  font-size: 2rem;
+  color: black;
+}
+.menu_hover {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  width: auto;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
+  width: 180px;
+  transform: translateY(3rem);
+  text-transform: none;
+}
+.menu_list .menu_hover li a {
+  text-transform: none;
+}
+.menu_hover li {
+  width: 100%;
+}
+.offer:hover .menu_hover,
+.new:hover .menu_hover,
+.feminine:hover .menu_hover,
+.plusSize:hover .menu_hover,
+.beauty:hover .menu_hover,
+.header_brands:hover .menu_hover,
+.shoes:hover .menu_hover,
+.pajamas:hover .menu_hover {
+  display: flex;
+  transform: translateY(0rem);
+}
+.search {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #838d91;
+  border-radius: 3px;
+}
+.search input {
+  word-spacing: 2px;
+  border-radius: 3px;
+  border: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  outline: none;
+  padding: 1rem;
+  background-color: white;
+}
+.search .icon_search {
+  cursor: pointer;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.login_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn_wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu_primary {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  width: 80%;
+  margin: auto;
+  border-bottom: none;
+  align-items: center;
+  padding: 0.5rem 0rem;
+  justify-content: space-between;
+}
+.menu_list li a {
+  color: #333333;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+.menu_list li a:hover {
+  color: #b8b8b8;
+}
+.logo {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.logo a {
+  color: black;
+}
+#special {
+  color: #d10f1c;
+}
+.menu-open {
+  display: none;
+}
+.menu-close {
+  display: none;
+}
+.menu_list li i {
+  display: none;
+}
+@media (max-width: 900px) {
+  header {
+    margin-bottom: 2rem;
+  }
+  .login {
+    display: none;
+  }
+  nav {
+    display: grid;
+  }
+  .menu_primary {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .search {
+    grid-row: 2;
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(230, 230, 230);
+  }
+  #search {
+    border-radius: 2rem;
+    background-color: rgb(243, 243, 243);
+  }
+  .container_icon {
+    align-self: flex-end;
+    justify-self: end;
+  }
+  .btn_wrapper {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .menu_list {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    z-index: 200;
+    overflow-y: scroll;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+  .menu_list li {
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu_list li i {
+    display: block;
+    color: black;
+  }
+
+  .menu_list li a {
+    font-family: "Abel", sans-serif;
+  }
+
+  .menu_list.active {
+    display: block;
+  }
+  .menu_list li a,
+  #special {
+    color: black;
+  }
+  .favorite {
+    display: none;
+  }
+  [data-menu="button_open"] {
+    display: block;
+  }
+}

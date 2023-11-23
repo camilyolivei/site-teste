@@ -1,0 +1,149 @@
+.category {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 91vw;
+  margin: auto;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+ .category_title{
+  width: 91vw;
+  margin: auto;
+  background-color: red;
+}
+.category_title h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 5rem 0 ;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 4rem;
+  background-color: #AD825C;
+  color: white;
+}
+
+.custom_container {
+  position: absolute;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  padding: 1rem 0;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+.category_choice:hover .custom_container {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  padding: 1rem;
+  z-index: 9;
+
+}
+
+.category_choice:hover button i {
+  transform: rotate(180deg);
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox label::before {
+  cursor: pointer;
+  content: "";
+  width: 18px;
+  background-color: white;
+  border-radius: 4px;
+  height: 18px;
+  display: inline-block;
+  border: 1px solid black;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-bottom: 3px;
+}
+.custom-checkbox input:checked + label::before {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: black;
+  background-position: center;
+  border: none;
+}
+.category_choice button {
+  cursor: pointer;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.532);
+  
+
+}
+.category_choice button h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.border{
+  border-top: 1px solid rgba(218, 218, 218, 0.532);
+  width: 91vw;
+  margin: auto;
+
+}
+.order {
+  margin-top: 9rem;
+  padding: 2rem 0 0 0;
+  width: 91vw;
+  margin: auto;
+  display: grid;
+  
+}
+.order button {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  width: 290px;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.532);
+  background: transparent;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+.order button h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.order button:hover .order_i {
+  transform: rotate(180deg);
+}
+@media (max-width: 1024px) {
+  .category_product {
+    width: 100%;
+  }
+}
+@media (max-width: 690px) {
+  .category {
+    padding-bottom: 2rem;
+  }
+  .category_img {
+    width: 100px;
+    height: 100px;
+  }
+  .order {
+    padding: 2rem 0 0 0;
+  }
+  .category_choice:hover .custom_container {
+    width: 150px;
+  
+  }
+}
+@media (max-width: 500px) {
+  .category_img {
+    width: 70px;
+    height: 70px;
+  }
+}

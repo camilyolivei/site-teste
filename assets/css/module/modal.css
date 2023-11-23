@@ -1,0 +1,157 @@
+.js .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 10;
+  animation: popup 1s ease-in-out 3s forwards;
+  font-family: 'Abel';
+}
+.modal{
+  display: none;
+}
+@keyframes popup {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.modal.closed {
+  display: none;
+}
+
+.modal-close-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+}
+.modal-content {
+  display: flex;
+  position: relative;
+  width: 35%;
+  height: 80%;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 2;
+  animation: scaleUp 0.5s ease-in-out 5s forwards;
+  background-color: white;
+  border-radius: 4px;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.modal-close-btn {
+  font-size: 16px;
+  padding: 5px;
+  background: transparent;
+  display: flex;
+  align-self: flex-end;
+  justify-self: end;
+  margin-top: -2rem;
+}
+
+.modal-close-btn:hover {
+  opacity: 0.9;
+}
+
+i,
+.btn-newsletter {
+  cursor: pointer;
+}
+.newsletter {
+  text-align: center;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  color: #000;}
+
+.newsletter_txt {
+  padding: 4rem;
+  display: grid;
+}
+.newsletter-title {
+  font-size: 44px;
+  text-transform: uppercase;
+}
+.newsletter-desc {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.newsletter form input {
+  border: none;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+  outline: none;
+}
+.newsletter form button {
+  font-family: 'Abel';
+  background-color: #000;
+  color: #ffffff;
+  width: 200px;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width:900px){
+  .newsletter {
+    grid-template-columns: 1fr;
+  }
+  .modal-content{
+    width: 50%;
+  }
+  .newsletter_txt {
+    padding: 2rem;
+}
+.newsletter form input {
+  width: 80%;
+  margin: auto;
+}
+}
+@media(max-width:510px){
+  .modal-content{
+    width: 70%;
+  }
+
+}
