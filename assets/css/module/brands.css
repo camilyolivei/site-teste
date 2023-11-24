@@ -27,7 +27,15 @@
   height: 100%;
 }
 @media (max-width: 500px) {
+  .brands {
+    padding: 0rem;
+    width: 91vw;
+    margin: auto;
+  }
   .brands__logo {
     width: 130px;
+  }
+  .brands .title-style{
+    padding: 0rem 0rem 3rem 0rem;
   }
 }
