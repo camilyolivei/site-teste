@@ -175,6 +175,7 @@ header nav ul {
   }
   nav {
     display: grid;
+    margin-bottom: 0.5rem;
   }
   .menu_primary {
     grid-template-columns: 1fr 1fr;
