@@ -15,6 +15,9 @@
     align-items: center;
     gap: 0.5rem   ;
 }
+.rules_item img{
+    object-fit: contain;
+}
 .rules_item span{
     font-weight: 500;
     font-size: 15px;

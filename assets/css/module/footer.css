@@ -3,7 +3,7 @@ footer {
   overflow-x: hidden;
   margin-top: 4rem;
   padding-top: 2rem;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.614);
+  border-top: 1px solid rgba(128, 128, 128, 0.201);
   font-family: 'Poppins', sans-serif;
 }
 .footer_container {
