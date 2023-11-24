@@ -42,7 +42,7 @@ header nav ul {
   width: 80%;
   margin: auto;
   align-items: center;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0rem 0rem 0rem;
   justify-content: space-between;
 }
 
@@ -134,7 +134,7 @@ header nav ul {
   margin: auto;
   border-bottom: none;
   align-items: center;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0rem 0rem 0rem;
   justify-content: space-between;
 }
 .menu_list li a {
