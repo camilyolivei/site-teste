@@ -135,10 +135,10 @@ body {
     height: 190px;
   }
   .slide-nav-previous {
-    left: 3rem;
+    left: 2rem;
   }
   .slide-nav-next {
-    right: 3rem;
+    right: 2rem;
   }
   .slide-nav-button {
     background-color: hsla(0,0%,100%,.6);
