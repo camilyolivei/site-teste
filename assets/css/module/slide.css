@@ -135,16 +135,16 @@ body {
     height: 190px;
   }
   .slide-nav-previous {
-    left: 1rem;
+    left: 3rem;
   }
   .slide-nav-next {
-    right: 1rem;
+    right: 3rem;
   }
   .slide-nav-button {
+    background-color: hsla(0,0%,100%,.6);
     box-shadow: none;
-    background: transparent;
-    color: rgb(131, 130, 130);
-    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
   }
   .category_choice button h1 {
     font-size: 13px;
