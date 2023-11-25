@@ -99,8 +99,9 @@
 }
 #close-cart {
   top: 1rem;
-  right: 3rem;
+  right: 2.1rem;
   cursor: pointer;
+  position: absolute;
 }
 @media(max-width:400px){
   .cart {
