@@ -132,7 +132,8 @@ body {
   }
   .slide-image {
     width: 100%;
-    height: 190px;
+    height: 140px;
+    object-fit: contain;
   }
   .slide-nav-previous {
     left: 2rem;
