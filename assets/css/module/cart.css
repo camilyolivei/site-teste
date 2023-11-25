@@ -98,7 +98,6 @@
   color: white;
 }
 #close-cart {
-  position: fixed;
   top: 1rem;
   right: 3rem;
   cursor: pointer;

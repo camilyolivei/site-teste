@@ -132,8 +132,8 @@ body {
   }
   .slide-image {
     width: 100%;
-    height: 140px;
-    object-fit: contain;
+    height: 150px;
+    object-fit:cover;
   }
   .slide-nav-previous {
     left: 2rem;
@@ -154,5 +154,10 @@ body {
 @media(max-width:400px){
   #slide {
     margin-top: 3.7rem;
+}
+.slide-image {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
 }
 }
