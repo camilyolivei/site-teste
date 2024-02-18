@@ -54,7 +54,7 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  font-family: 'Poppins', sans-serif;;
+  font-family: "Poppins", sans-serif;
 }
 .menu_list li a i {
   font-size: 2rem;
@@ -133,20 +133,20 @@ header nav ul {
   width: 80%;
   margin: auto;
   border-bottom: none;
-  align-items: center;
-  padding: 0.5rem 0rem;
+  align-items: flex-end;
+  padding: 0.5rem 0rem 1rem 0rem;
   justify-content: space-between;
 }
 .menu_list li a {
   color: #333333;
   font-size: 1.3rem;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .menu_list li a:hover {
   color: #b8b8b8;
 }
-.logo img{
+.logo img {
   width: 100px;
 }
 .logo a {
