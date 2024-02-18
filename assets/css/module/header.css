@@ -210,6 +210,14 @@ header nav ul {
     gap: 2rem;
     padding: 0;
   }
+  .bag{
+    display: flex;
+  }
+  .bag a{
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
   .bag li {
     display: flex;
   }
