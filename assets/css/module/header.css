@@ -176,7 +176,7 @@ header nav ul {
   }
   .menu_primary {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    gap: 1rem ;
   }
   .search {
     grid-row: 2;
@@ -200,9 +200,8 @@ header nav ul {
     gap: 2rem;
   }
 
-  .logo {
-    font-size: 2rem;
-    margin-right: 1rem;
+  .logo img{
+    width: 80px;
   }
 
   .menu_list {
