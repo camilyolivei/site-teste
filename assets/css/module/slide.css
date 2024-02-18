@@ -160,4 +160,10 @@ body {
   height: 140px;
   object-fit: contain;
 }
+.slide-nav-previous {
+  left: 2.5rem;
+}
+.slide-nav-next {
+  right: 2.5rem;
+}
 }

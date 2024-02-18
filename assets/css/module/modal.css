@@ -13,9 +13,9 @@
   pointer-events: none;
   z-index: 10;
   animation: popup 1s ease-in-out 3s forwards;
-  font-family: 'Abel';
+  font-family: "Abel";
 }
-.modal{
+.modal {
   display: none;
 }
 @keyframes popup {
@@ -90,7 +90,8 @@ i,
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  color: #000;}
+  color: #000;
+}
 
 .newsletter_txt {
   padding: 4rem;
@@ -118,7 +119,7 @@ i,
   outline: none;
 }
 .newsletter form button {
-  font-family: 'Abel';
+  font-family: "Abel";
   background-color: #000;
   color: #ffffff;
   width: 200px;
@@ -134,38 +135,46 @@ i,
   align-items: center;
   justify-content: center;
 }
-@media(max-width:900px){
+@media (max-width: 900px) {
   .newsletter {
     grid-template-columns: 1fr;
   }
-  .modal-content{
+  .modal-content {
     width: 50%;
   }
   .newsletter_txt {
     padding: 2rem;
-}
-.newsletter form input {
-  width: 80%;
-  margin: auto;
-}
-}
-@media(max-width:510px){
-  .modal-content{
+  }
+  .newsletter form input {
     width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 510px) {
+  .modal-content {
+    width: 80%;
+  }
+  .newsletter_txt {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 70%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .modal form{
+    gap: 1rem;
   }
   .modal-close-btn {
     padding: 10px;
     margin-right: -1rem;
-    margin-top: -1rem;
+    margin-top: -7rem;
   }
   .newsletter-title {
     font-size: 30px;
     text-transform: uppercase;
-}
-.modal-content {
-
-  height: 70%;
-}
-
-
+  }
+  .modal-content {
+    height: 50%;
+  }
 }
