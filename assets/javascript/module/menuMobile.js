@@ -13,7 +13,7 @@ export default function initMenuMobile() {
     menuButton.classList.add("active");
     buttonReplacement.classList.remove("fa-bars");
     buttonReplacement.classList.add("fa-xmark");
-    outsideClick(menuList, ["click", "touchstart"], () => {
+    outsideClick(menuList, ["click",'touchstart'], () => {
       menuList.classList.remove("active");
       menuButton.classList.remove("active");
       buttonReplacement.classList.add("fa-bars");
