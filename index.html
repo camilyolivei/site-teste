@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
@@ -52,17 +58,11 @@
     <===================================================================================-->
     <!--Header-->
     <header id="top">
-        <div class="emphasis">
-            <p>Frete gratis na coleção de verão</p>
-        </div>
         <nav>
             <ul class="menu_primary">
-                <li class="logo"><a href="#"><img src="assets/images/icon/logo.png" alt=""></a></li>
-                <li class="search">
-                    <input type="text" name="search" id="search" placeholder="O que você procura?">
-                    <label for="search" class="icon_search">
-                        <a href="#"><i class="bi bi-search"></i></a>
-                    </label>
+                <li class="menu_decoration"><img src="menu.png" alt=""></li>
+                <li class="logo">
+                    <a href="#">Milyx</a>
                 </li>
                 <li class="container_icon">
                     <ul class="btn_wrapper">
@@ -70,76 +70,135 @@
                             <button class="login_btn">Entrar <i class="fa-solid fa-chevron-down"></i></button>
                         </li>
                         <li class="favorite"><a href="#"><img src="assets/images/icon/heart.png" alt="Coração"></a></li>
-                        <li class="bag" id="cart-icon"><a href="#"> <i class='bx bx-cart' ></i></a></li>
+                        <li class="bag" id="cart-icon"><a href="#"> <i class='bx bx-cart'></i></a></li>
                         <li class="menu-open" data-menu="button_open"><i class="fa-solid fa-bars"></i></li>
-                    
+
                     </ul>
                 </li>
             </ul>
             <ul class="menu_list" data-menu="list">
                 <li class="offer">
-                    <a href="#">Ofertas <i class='bx bx-chevron-down'></i></a>
-                    <ul class="menu_hover">
-                        <li><a href="#">Vestido</a></li>
-                        <li><a href="#">Maquiagem</a></li>
-                        <li><a href="#">Calça jeans</a></li>
-                        <li><a href="#">Salto</a></li>
-                    </ul>
+                    <a href="#">Ofertas <img src="down-arrow (1).png" alt="Icone down"></a>
+                    <div class="menu_hover">
+
+                        <div>
+                            <h3>Categoria</h3>
+                            <ul>
+                                <li><a href="#">Vestido</a></li>
+                                <li><a href="#">Maquiagem</a></li>
+                                <li><a href="#">Calça jeans</a></li>
+                                <li><a href="#">Salto</a></li>
+                                <li><a href="#">Colete</a></li>
+                                <li><a href="#">Saia</a></li>
+                                <li><a href="#">Salto</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Coleção</h3>
+                            <ul>
+                                <li><a href="#">Vestido</a></li>
+                                <li><a href="#">Maquiagem</a></li>
+                                <li><a href="#">Calça jeans</a></li>
+                                <li><a href="#">Salto</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </li>
                 <li class="new">
-                    <a href="#">Novidades <i class='bx bx-chevron-down'></i></a>
-                    <ul class="menu_hover">
-                        <li><a href="#"> óculos de sol</a></li>
-                        <li><a href="#">Boné</a></li>
-                    </ul>
+                    <a href="#">Novidades <img src="down-arrow (1).png" alt="Icone down"></a>
+                    <div class="menu_hover">
+
+                        <div>
+                            <h3>Vestidos</h3>
+                            <ul>
+                                <li><a href="#">Colorido</a></li>
+                                <li><a href="#">Para festa</a></li>
+                                <li><a href="#">Saida de Praia</a></li>
+                                <li><a href="#">Vestido longo</a></li>
+                                <li><a href="#">Fenda</a></li>
+                                <li><a href="#">Curto</a></li>
+                                <li><a href="#">Jeans</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Coleção</h3>
+                            <ul>
+                                <li><a href="#">Vestido</a></li>
+                                <li><a href="#">Maquiagem</a></li>
+                                <li><a href="#">Calça jeans</a></li>
+                                <li><a href="#">Salto</a></li>
+                            </ul>
+                        </div>
                 </li>
-                <li class="feminine">
-                    <a href="#">Feminino <i class='bx bx-chevron-down'></i></a>
-                    <ul class="menu_hover">
-                        <li><a href="#"> Saia</a></li>
-                        <li><a href="#">Vestido</a></li>
-                        <li><a href="#">Maquiagem</a></li>
-                    </ul>
+                <li>
+                    <label for="search" class="search">
+                        <input type="text" name="search" id="search" placeholder="Search...">
+                        <img src="search-interface-symbol.png" alt=""></label>
                 </li>
-                <li class="plusSize">
-                    <a href="#">Plus size <i class='bx bx-chevron-down'></i></a>
-                    <ul class="menu_hover">
-                        <li><a href="#">Saia</a></li>
-                        <li><a href="#">Vestido</a></li>
-                        <li><a href="#">Maquiagem</a></li>
-                    </ul>
-                </li>
+
                 <li class="beauty">
-                    <a href="#">Beleza <i class='bx bx-chevron-down'></i></a>
+                    <a href="#">Beleza </a>
                     <ul class="menu_hover">
-                        <li><a href="#">Skin Care</a></li>
-                        <li><a href="#">Escova</a></li>
-                        <li><a href="#">Maquiagem</a></li>
+
                     </ul>
+                    <div class="menu_hover">
+
+                        <div>
+                            <h3>Produtos</h3>
+                            <ul>
+                                <li><a href="#">Skin Care</a></li>
+                                <li><a href="#">Escova</a></li>
+                                <li><a href="#">Maquiagem</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li class="header_brands">
-                    <a href="#">Marcas <i class='bx bx-chevron-down'></i></a>
-                    <ul class="menu_hover">
-                        <li><a href="#">Vans</a></li>
-                    </ul>
+                    <a href="#">Marcas </a>
+                    <div class="menu_hover">
+
+                        <div>
+                            <h3>Em alta</h3>
+                            <ul>
+                                <li><a href="#">Vans</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </li>
 
                 <li class="shoes">
-                    <a href="#">Calçados <i class='bx bx-chevron-down'></i></a>
-                    <ul class="menu_hover">
-                        <li><a href="#">Botas</a></li>
-                        <li><a href="#">Tênis</a></li>
-                        <li><a href="#">Tênis</a></li>
-                        <li><a href="#"> Sandália</a></li>
+                    <a href="#">Calçados </a>
 
-                    </ul>
+                    <div class="menu_hover">
+
+                        <div>
+                            <h3>Promoção</h3>
+                            <ul>
+                                <li><a href="#">Botas</a></li>
+                                <li><a href="#">Tênis</a></li>
+                                <li><a href="#">Tênis</a></li>
+                                <li><a href="#"> Sandália</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li class="pajamas">
-                    <a href="#">Pijamas <i class='bx bx-chevron-down'></i></a>
-                    <ul class="menu_hover">
-                        <li><a href="#"> Flor</a></li>
-                        <li><a href="#">Liso</a></li>
-                    </ul>
+                    <a href="#">Pijamas </a>
+                    <div class="menu_hover">
+
+                        <div>
+                            <h3>Colorido</h3>
+                            <ul>
+                                <li><a href="#">Cetim</a></li>
+                                <li><a href="#">Tecido canelado</a></li>
+                                
+
+                            </ul>
+                        </div>
+                    </div>
                 </li>
             </ul>
 
@@ -153,7 +212,7 @@
                             <i class="fa-solid fa-x" name="close-outline"></i>
                         </button>
                         <h1>Login</h1>
-                        
+
                     </div>
                     <form action="\">
                         <div class="email">
@@ -220,10 +279,12 @@
                     <div class="slide-list" data-slide="list">
                         <div class="slide-item" data-slide="item" data-index="0">
                             <div class="slide-content">
-                                <img class="slide-image" src="../site-teste/assets/images/imgSlide/banner-1.png" alt="Imagem slide 1" />
+                                <img class="slide-image" src="../site-teste/ah.png" alt="Imagem slide 1" />
                             </div>
                         </div>
-
+                        <!--para apareceu no site page tem que por assima imagem
+                        
+                        <img class="slide-image" src="../site-teste/assets/images/imgSlide/banner-2.png" alt="Imagem slide 2" />-->
                         <div class="slide-item" data-slide="item" data-index="1">
                             <div class="slide-content">
                                 <img class="slide-image" src="../site-teste/assets/images/imgSlide/banner-2.png" alt="Imagem slide 2" />
@@ -276,7 +337,7 @@
             <section class="images">
                 <div class="img_news"></div>
                 <div>
-                    <video src="assets/images/imgCollections/production_id_5120828 (540p).mp4" autoplay muted loop ></video>
+                    <video src="assets/images/imgCollections/production_id_5120828 (540p).mp4" autoplay muted loop></video>
                 </div>
                 <div class="img_two img_news"></div>
             </section>
@@ -407,8 +468,8 @@
 
                                 <span class="price">R$ 50</span>
                                 <h2 class="product-title">Saia bege tecido malha com bolso</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -417,8 +478,8 @@
 
                                 <span class="price">R$ 125</span>
                                 <h2 class="product-title">Blusa preta tecido canelado</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -427,8 +488,8 @@
 
                                 <span class="price">R$ 30</span>
                                 <h2 class="product-title">Vestido bege tecido malha</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -437,8 +498,8 @@
 
                                 <span class="price">R$ 175</span>
                                 <h2 class="product-title">Saia jeans branca com cinto</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -447,8 +508,8 @@
 
                                 <span class="price">R$ 200</span>
                                 <h2 class="product-title">Bermuda bege tecido canelado</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -457,8 +518,8 @@
 
                                 <span class="price">R$ 15</span>
                                 <h2 class="product-title">Vestido branco tecido malha</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -467,8 +528,8 @@
 
                                 <span class="price">R$ 20</span>
                                 <h2 class="product-title">Blusa manga comprida tecido malha</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -477,8 +538,8 @@
 
                                 <span class="price">R$ 75</span>
                                 <h2 class="product-title">Camisa social branca comprida</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -487,8 +548,8 @@
 
                                 <span class="price">R$ 40</span>
                                 <h2 class="product-title">Short saia de couro sintético</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -497,8 +558,8 @@
 
                                 <span class="price">R$ 60 </span>
                                 <h2 class="product-title">Saia bege com cinto marrom </h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                     </ul>
@@ -524,8 +585,8 @@
 
                                 <span class="price">R$ 50</span>
                                 <h2 class="product-title">Bermuda azul tecido canelado</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -534,8 +595,8 @@
 
                                 <span class="price">R$ 125</span>
                                 <h2 class="product-title">Bermuda preta tecido couro</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -544,8 +605,8 @@
 
                                 <span class="price">R$ 50</span>
                                 <h2 class="product-title">Blusa textura canelado comprida</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -554,8 +615,8 @@
 
                                 <span class="price">R$ 175</span>
                                 <h2 class="product-title">Saia branca tecido malha curta</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -564,8 +625,8 @@
 
                                 <span class="price">R$ 200</span>
                                 <h2 class="product-title">Saia short preto tecido malha</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -574,8 +635,8 @@
 
                                 <span class="price">R$ 75</span>
                                 <h2 class="product-title">Blusa listrada social comprida</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -584,8 +645,8 @@
 
                                 <span class="price">R$ 60 </span>
                                 <h2 class="product-title">Saia bege tecido social curta</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -594,8 +655,8 @@
 
                                 <span class="price">R$ 300</span>
                                 <h2 class="product-title">Vestido branco com uma manga</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
                         <li class="carousel_item" data-carousel="item">
@@ -604,22 +665,22 @@
 
                                 <span class="price">R$ 70</span>
                                 <h2 class="product-title">Blusa preta croped comprida</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
-                        
+
                         <li class="carousel_item" data-carousel="item">
                             <a href="#" class="carousel_link">
                                 <img src="assets/images/imgCollections/saia-c.webp" alt="short canelado" class="img carousel_cover product-img img-1">
 
                                 <span class="price">R$ 40</span>
                                 <h2 class="product-title">Short saia canelado comprido</h2>
-                                
-                                <i class='bx bx-cart-add add-cart' ></i>
+
+                                <i class='bx bx-cart-add add-cart'></i>
                             </a>
                         </li>
-                        
+
                     </ul>
                 </section>
             </div>
@@ -709,6 +770,7 @@
     </footer>
     <script type="module" src="assets/javascript/script.js"></script>
     <script src="assets/javascript/slide.js"></script>
+
     <script>
         initSlider({
             autoPlay: true,

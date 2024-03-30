@@ -6,6 +6,10 @@
   border: 0;
   box-sizing: border-box;
 }
+.main_container{
+  max-width: 1200px;
+  margin: auto;
+}
 html,
 body {
   width: 100vw;
@@ -16,7 +20,6 @@ body {
 
 #slide {
   position: relative;
-  margin-top: 2rem;
 }
 .wrapper {
   display: flex;
@@ -110,7 +113,7 @@ body {
     height: auto;
   }
   #slide {
-    margin-top: 5rem;
+    margin-top: -4rem;
   }
   .slide-controls {
     margin-top: 30rem;
@@ -152,9 +155,6 @@ body {
 }
 }
 @media(max-width:400px){
-  #slide {
-    margin-top: 3.7rem;
-}
 .slide-image {
   width: 100%;
   height: 140px;
