@@ -33,6 +33,8 @@ const changeValue = () => {
   }else if(document.body.clientWidth < 760){
     value = 2;
     return;
+  }else if(document.body.clientWidth > 1700){
+    value = 5
   }
   value = 5;
 };

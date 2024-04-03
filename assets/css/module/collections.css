@@ -110,7 +110,18 @@
   grid-column: span 2;
 }
 
-
+@media(min-width:1700px){
+  .carousel_item {
+    width: calc(1700 / 5);
+    margin: auto;
+  }
+  .carousel_item i{
+    display: flex;
+      align-self: baseline;
+      justify-self: baseline;
+      margin-left: 4rem;
+  }
+}
 @media screen and (max-width: 1100px) {
   .collection {
     padding-top: 0;

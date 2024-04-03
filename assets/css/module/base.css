@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   font-family: 'Abel', sans-serif;
 }
+
 main {
   padding-top: 10rem;
   overflow-x: hidden;
@@ -46,5 +47,34 @@ main {
 @media (max-width: 900px) {
   main {
     padding-top: 9rem;
+  }
+
+}
+
+@media (min-width: 1700px) {
+  .box-container {
+    width: 1700px;
+    margin:0 auto;
+    display: flex;
+    position: inherit;
+
+  }
+  .rules {
+   margin:0 auto !important;
+  }
+  .collections{
+    width: 1700px;
+    margin: auto;
+  }
+  .slide-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide-image{
+    object-fit: contain;
+    display: flex;
+    align-self: center;
+    justify-self: center;
   }
 }
