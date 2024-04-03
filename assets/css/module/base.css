@@ -77,4 +77,8 @@ main {
     align-self: center;
     justify-self: center;
   }
+  .modal-content{
+    width: 25% !important;
+    height: 40% !important;
+  }
 }
